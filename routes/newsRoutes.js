@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
     const newsResponse = await axios.get(
       `https://newsapi.org/v2/everything?q=indian+election&sortBy=publishedAt&apiKey=${process.env.NEWS_API_KEY}`,
     );
-    let articles = newsResponse.data.articles.slice(7, 13);
+    let articles = newsResponse.data.articles.slice(7, 37);
 
     const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
