@@ -15,7 +15,7 @@ router.post("/ask", auth, async (req, res) => {
   try {
     const { prompt } = req.body;
     const model = genAI.getGenerativeModel({
-      model: "gemini-2.5-flash",
+      model: "gemini-3-flash-preview",
     });
 
     const systemPrompt = `You are an AI assistant for an Indian Election Prediction Platform called ElectPulse. Answer the user's political or election-related query accurately and neutrally. Query: ${prompt}`;
