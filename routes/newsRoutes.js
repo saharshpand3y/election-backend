@@ -30,8 +30,8 @@ router.post("/", async (req, res) => {
         break;
       default:
         category = "indian+election+and+politics";
-        start = 11;
-        end = 41;
+        start = 12;
+        end = 42;
     }
     
     const newsResponse = await axios.get(
